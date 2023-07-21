@@ -1,0 +1,17 @@
+* {
+    font-family: Arial, serif;
+}
+
+footer {
+    color: white;
+    background-color: #2b2b2b;
+}
+
+.social-links li{
+    display: grid ;
+    padding: 20px;
+}
+.social-links a{
+    color: white;
+    text-decoration: none;
+}
