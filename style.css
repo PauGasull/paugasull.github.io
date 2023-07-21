@@ -1,5 +1,6 @@
 * {
     font-family: Arial, serif;
+    color: black;
 }
 
 footer {
@@ -7,11 +8,18 @@ footer {
     background-color: #2b2b2b;
 }
 
-.social-links li{
-    display: grid ;
-    padding: 20px;
+footer .social-links {
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px;
 }
-.social-links a{
+
+footer td {
+    padding-bottom: 15px;
+}
+
+footer .social-links a {
     color: white;
     text-decoration: none;
+    padding: 0px 20px;
 }
