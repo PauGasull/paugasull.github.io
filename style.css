@@ -1,5 +1,5 @@
 * {
-    font-family: Arial, serif;
+    font-family: Consolas, monospaced, monospace;
     color: white;
 }
 
@@ -9,8 +9,9 @@ body {
     background-attachment: scroll;
     background-position: center center;
     background-size: cover;
-
 }
+
+
 
 hr{
     border-color: rgba(255, 255, 255, 0.7);
@@ -62,6 +63,21 @@ footer .social-links a {
     border: white solid 3px;
     margin: 15px;
     box-shadow: 3px 3px 5px white;
+}
+
+.wot {
+    color: dodgerblue;
+    font-style: oblique;
+}
+
+.art {
+    color: hotpink;
+    font-style: oblique;
+}
+
+.music {
+    color: gold;
+    font-style: oblique;
 }
 
 .letter-P {
