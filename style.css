@@ -11,8 +11,6 @@ body {
     background-size: cover;
 }
 
-
-
 hr{
     border-color: rgba(255, 255, 255, 0.7);
     height: 3px;
@@ -83,9 +81,15 @@ footer .social-links a {
 .letter-P {
     color: #5e625f;
 }
+
 .letter-G {
     color: #d8bb99;
 }
+
 .letter-P, .letter-G{
     font-size: 110%;
+}
+
+article {
+    margin-left: 15%;
 }
