@@ -23,6 +23,10 @@ footer {
     background-color: #2b2b2b;
 }
 
+footer p {
+    margin-left: 10%;
+}
+
 footer .social-links {
     text-align: center;
     margin: 0 auto;
@@ -88,8 +92,39 @@ footer .social-links a {
 
 .letter-P, .letter-G{
     font-size: 110%;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
 article {
-    margin-left: 15%;
+    margin: auto 15%;
+}
+
+.work-links{
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.work-links button {
+    width: 100%;
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 90%;
+    box-shadow: 0 1px 5px #fff;
+    transition: border-radius .5s;
+}
+
+.work-links button:hover{
+    border-radius: 5px;
+    transform: translateY(-3px);
+    box-shadow: 0 2px 6px #fff;
+    transition: border-radius .5s, transform .2s, box-shadow .1s;
+}
+
+.work-links button:active{
+    border-radius: 5px;
+    transform: translateY(1px);
+    box-shadow: 0 0 #fff;
+    transition: border-radius 0s, transform .05s, box-shadow 0s;
 }
