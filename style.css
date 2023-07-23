@@ -27,10 +27,18 @@ footer td {
     padding-bottom: 15px;
 }
 
+footer h3 {
+    padding-top: 15px;
+}
+
 footer .social-links a {
     color: white;
     text-decoration: none;
-    padding: 0px 20px;
+    padding: 0 20px;
+}
+
+.presentation {
+    display: flex;
 }
 
 .presentation img {
@@ -38,5 +46,15 @@ footer .social-links a {
     border-radius: 100%;
     border: white solid 3px;
     margin: 15px;
-    box-shadow: 5px 5px 10px #424242;
+    box-shadow: 3px 3px 5px white;
+}
+
+.letter-P {
+    color: #5e625f;
+}
+.letter-G {
+    color: #d8bb99;
+}
+.letter-P, .letter-G{
+    font-size: 110%;
 }
