@@ -122,7 +122,7 @@ article {
     transform: translateY(-3px);
     box-shadow: 0 3px 6px #fff;
     font-weight: bold;
-    transition: border-radius .5s, transform .2s, box-shadow .1s, font-weight .2s;
+    transition: border-radius .25s, transform .2s, box-shadow .1s, font-weight .2s;
 }
 
 .work-links button:active{
