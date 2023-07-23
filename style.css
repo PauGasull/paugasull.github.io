@@ -29,6 +29,7 @@ footer td {
 
 footer h3 {
     padding-top: 15px;
+    margin-left: 15%;
 }
 
 footer .social-links a {
@@ -39,6 +40,7 @@ footer .social-links a {
 
 .presentation {
     display: flex;
+    justify-content: center;
 }
 
 .presentation img {
