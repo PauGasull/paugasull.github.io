@@ -113,20 +113,24 @@ article {
     font-size: 90%;
     box-shadow: 0 1px 5px #fff;
     transition: border-radius .5s;
+    border: 2px solid black;
+    cursor: pointer;
 }
 
 .work-links button:hover{
     border-radius: 5px;
     transform: translateY(-3px);
     box-shadow: 0 3px 6px #fff;
-    transition: border-radius .5s, transform .2s, box-shadow .1s;
+    font-weight: bold;
+    transition: border-radius .5s, transform .2s, box-shadow .1s, font-weight .2s;
 }
 
 .work-links button:active{
     border-radius: 5px;
     transform: translateY(1px);
     box-shadow: 0 0 #fff;
-    transition: border-radius 0s, transform .05s, box-shadow 0s;
+    font-weight: lighter;
+    transition: border-radius 0s, transform .05s, box-shadow 0s, font-weight .05s;
 }
 
 .work-links .button-art:hover {
