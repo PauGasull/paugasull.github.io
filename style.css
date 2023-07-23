@@ -128,3 +128,13 @@ article {
     box-shadow: 0 0 #fff;
     transition: border-radius 0s, transform .05s, box-shadow 0s;
 }
+
+.work-links .button-art:hover {
+    background-color: #ff8ec7;
+}
+.work-links .button-technology:hover {
+    background-color: #5fafff;
+}
+.work-links .button-music:hover {
+    background-color: #ffe259;
+}
