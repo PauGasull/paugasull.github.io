@@ -1,6 +1,15 @@
 * {
     font-family: Arial, serif;
-    color: black;
+    color: white;
+}
+
+body {
+    background-image: linear-gradient(black, #2b2b2b);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+
 }
 
 footer {
@@ -22,4 +31,12 @@ footer .social-links a {
     color: white;
     text-decoration: none;
     padding: 0px 20px;
+}
+
+.presentation img {
+    background-color: #424242;
+    border-radius: 100%;
+    border: white solid 3px;
+    margin: 15px;
+    box-shadow: 5px 5px 10px #424242;
 }
