@@ -118,7 +118,7 @@ article {
 .work-links button:hover{
     border-radius: 5px;
     transform: translateY(-3px);
-    box-shadow: 0 2px 6px #fff;
+    box-shadow: 0 3px 6px #fff;
     transition: border-radius .5s, transform .2s, box-shadow .1s;
 }
 
