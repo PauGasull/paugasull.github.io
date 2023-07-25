@@ -11,7 +11,7 @@ body {
     background-size: cover;
 }
 
-hr{
+hr {
     border-color: rgba(255, 255, 255, 0.7);
     height: 3px;
     width: 50%;
@@ -21,6 +21,8 @@ hr{
 footer {
     color: white;
     background-color: #2b2b2b;
+    width: 100%;
+    height: 100%;
 }
 
 footer p {
@@ -31,90 +33,122 @@ footer .social-links {
     text-align: center;
     margin: 0 auto;
     padding: 40px;
+    table-layout: fixed;
 }
 
 footer td {
     padding-bottom: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
 }
 
 footer h3 {
-    display: flex;
-    justify-content: center;
     padding-top: 15px;
-    margin-left: -25%;
+    margin-left: 35px;
+    width: 100%;
+    height: 100%;
 }
 
 footer .social-links a {
     color: white;
     text-decoration: none;
     padding: 0 20px;
+    width: 100%;
+    height: 100%;
 }
 
 .presentation {
     display: flex;
     justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 .presentation-child {
     margin: auto 35px auto 35px;
+    width: 100%;
+    height: 100%;
 }
 
 .presentation img {
     background-color: #424242;
     border-radius: 100%;
     border: white solid 3px;
-    margin: 15px;
+    position: relative;
+    left: 25%;
     box-shadow: 3px 3px 5px white;
 }
 
 .wot {
     color: dodgerblue;
     font-style: oblique;
+    width: 100%;
+    height: 100%;
 }
 
 .art {
     color: hotpink;
     font-style: oblique;
+    width: 100%;
+    height: 100%;
 }
 
 .music {
     color: gold;
     font-style: oblique;
+    width: 100%;
+    height: 100%;
 }
 
 .letter-P {
     color: #5e625f;
+    width: 100%;
+    height: 100%;
 }
 
 .letter-G {
     color: #d8bb99;
+    width: 100%;
+    height: 100%;
 }
 
 .letter-P, .letter-G{
     font-size: 110%;
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    width: 100%;
+    height: 100%;
 }
 
 article {
     margin: auto 15%;
 }
 
-.work-links{
+article h3 {
     width: 100%;
-    table-layout: fixed;
-    border-collapse: collapse;
+    height: 100%;
+}
+
+.work-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.work-links span {
+    margin: auto 5px;
+    width: 100%;
 }
 
 .work-links button {
-    width: 100%;
     color: black;
     border-radius: 10px;
     padding: 10px;
-    font-size: 90%;
+    max-font-size: 3mv;
     box-shadow: 0 1px 5px #fff;
     transition: border-radius .5s;
     border: 2px solid black;
     cursor: pointer;
+    width: 100%;
 }
 
 .work-links button:hover{
@@ -123,6 +157,8 @@ article {
     box-shadow: 0 3px 6px #fff;
     font-weight: bold;
     transition: border-radius .25s, transform .2s, box-shadow .1s, font-weight .2s;
+    width: 100%;
+    height: 100%;
 }
 
 .work-links button:active{
@@ -131,6 +167,8 @@ article {
     box-shadow: 0 0 #fff;
     font-weight: lighter;
     transition: border-radius 0s, transform .05s, box-shadow 0s, font-weight .05s;
+    width: 100%;
+    height: 100%;
 }
 
 .work-links .button-art:hover {
@@ -141,4 +179,17 @@ article {
 }
 .work-links .button-music:hover {
     background-color: #ffe259;
+}
+
+/* Media query for small screens (e.g., phones) */
+@media screen and (max-width: 520px) {
+    .work-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .work-links span {
+        margin: 5px auto;
+        width: 100%;
+    }
 }
