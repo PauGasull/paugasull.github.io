@@ -182,7 +182,7 @@ article h3 {
 }
 
 /* Media query for small screens (e.g., phones) */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
     .work-links {
         display: flex;
         flex-direction: column;
