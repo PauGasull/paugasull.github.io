@@ -192,4 +192,12 @@ article h3 {
         margin: 5px auto;
         width: 100%;
     }
+
+    footer tr > *{
+        display: block;
+    }
+    footer tr {
+        display: table-cell;
+    }
+
 }
