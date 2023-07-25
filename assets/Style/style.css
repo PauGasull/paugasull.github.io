@@ -9,6 +9,8 @@ body {
     background-attachment: scroll;
     background-position: center center;
     background-size: cover;
+    height: 100%;
+    width: 100%;
 }
 
 hr {
