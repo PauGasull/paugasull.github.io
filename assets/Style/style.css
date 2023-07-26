@@ -221,7 +221,7 @@ article h3 {
     .presentation-child {
         text-align:center;
         margin:auto;
-        padding: 2%
+        padding: 2%;
     }
 
     .presentation img {
@@ -232,5 +232,14 @@ article h3 {
         margin:auto;
         display:block;
         float:none;
+    }
+
+    html {
+        overflow-x: hidden;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+
     }
 }
