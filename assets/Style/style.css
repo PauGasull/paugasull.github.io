@@ -190,6 +190,9 @@ article h3 {
 
 /* Media query for small screens (e.g., phones) */
 @media only screen and (min-width: 480px){
+    body {
+        overflow: hidden;
+    }
     .work-links {
         display:flex;
         flex-direction:column;
