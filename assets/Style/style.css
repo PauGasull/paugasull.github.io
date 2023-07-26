@@ -10,11 +10,11 @@ body {
     background-position:center center;
     background-size:cover;
     height:100%;
-    width:100%;
-    padding:0;
-    margin:auto;
+    width:95%;
     overflow:scroll;
     overflow-x:hidden;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 hr {
@@ -196,9 +196,8 @@ article h3 {
         overflow:scroll;
         overflow-x:hidden;
         height:100%;
-        width:100%;
+        width:95%;
         padding:0;
-        margin:auto;
     }
 
     .work-links {
@@ -229,6 +228,7 @@ article h3 {
     .presentation-child {
         text-align:center;
         margin:auto;
+        padding: 2%
     }
 
     .presentation img {
