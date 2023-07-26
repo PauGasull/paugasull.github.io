@@ -84,6 +84,17 @@ footer .social-links a {
     float:right;
     margin-top: 5px;
 }
+.about-me {
+    margin:auto 15%;
+    width:95%;
+    height:95%;
+}
+
+.about-me a{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #8cd024;
+}
 
 .wot {
     color:#1e90ff;
