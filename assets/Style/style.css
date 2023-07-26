@@ -7,8 +7,6 @@ html, body {
     font-size: 40px;
     margin:0; /* remove default margin */
     padding:0; /* remove default padding */
-    width:100%; /* take full browser width */
-    height:100%; /* take full browser height*/
 }
 
 .screen .main {
