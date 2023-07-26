@@ -13,6 +13,7 @@ body {
     width:100%;
     padding:0;
     margin:auto;
+    overflow: hidden;
 }
 
 hr {
@@ -189,7 +190,7 @@ article h3 {
 }
 
 /* Media query for small screens (e.g., phones) */
-@media (max-width:320px) {
+@media (max-width:420px) {
     .work-links {
         display:flex;
         flex-direction:column;
