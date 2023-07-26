@@ -13,6 +13,8 @@ body {
     width:100%;
     padding:0;
     margin:auto;
+    overflow:scroll;
+    overflow-x:hidden;
 }
 
 hr {
@@ -36,7 +38,6 @@ footer p {
 footer .social-links {
     text-align:center;
     margin:0 auto;
-    padding:40px;
     table-layout:fixed;
 }
 
@@ -81,6 +82,7 @@ footer .social-links a {
     border:#fff solid 3px;
     box-shadow:3px 3px 5px #fff;
     float:right;
+    margin-top: 5px;
 }
 
 .wot {
@@ -139,7 +141,7 @@ article h3 {
 }
 
 .work-links span {
-    margin:auto 5px;
+    margin:auto 1%;
     width:100%;
 }
 
@@ -189,9 +191,10 @@ article h3 {
 }
 
 /* Media query for small screens (e.g., phones) */
-@media only screen and (max-width:320px) {
+@media only screen and (max-width:480px) {
     body {
-        overflow: hidden;
+        overflow:scroll;
+        overflow-x:hidden;
         height:100%;
         width:100%;
         padding:0;
@@ -205,7 +208,7 @@ article h3 {
     }
 
     .work-links span {
-        margin:5px auto;
+        margin:2% auto;
         width:100%;
     }
 
