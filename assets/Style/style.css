@@ -189,10 +189,11 @@ article h3 {
 }
 
 /* Media query for small screens (e.g., phones) */
-@media only screen and (min-width: 480px){
+@media only screen and (max-width:320px) {
     body {
         overflow: hidden;
     }
+
     .work-links {
         display:flex;
         flex-direction:column;
