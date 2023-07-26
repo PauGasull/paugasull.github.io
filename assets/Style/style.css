@@ -3,19 +3,6 @@
     color: white;
 }
 
-html, body {
-    font-size: 40px;
-    margin:0; /* remove default margin */
-    padding:0; /* remove default padding */
-}
-
-.screen .main {
-    width: 100%; /* <--now this takes full browser dimension  */
-    height: 100%; /* <--now this takes full browser dimension  */
-    margin:0;
-    padding:0;
-}
-
 body {
     background-image: linear-gradient(black, #2b2b2b);
     background-repeat: no-repeat;
@@ -24,6 +11,8 @@ body {
     background-size: cover;
     height: 100%;
     width: 100%;
+    padding: 0;
+    margin: auto;
 }
 
 hr {
