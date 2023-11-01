@@ -1,37 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!--
+/*******************************\
+|   (c) Pau Gasull Vicens       |
+|           2023                |
+\*******************************/
+-->
+
 <head>
     <!-- Meta -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no"/>
+    <meta name="description" content="Game and Software Developer">
+    <meta name="keywords" content="Devlogs, Videogames, Software, C++">
+    <meta name="author" content="John Doe">
 
     <!-- Title and Icon -->
     <title>Pau Gasull - Home</title>
-    <link rel="icon" href="https://cdn.discordapp.com/attachments/1131909261195235379/1131917711308492820/WebIco.png">
+    <link rel="icon" href="assets/imgs/Ico.png">
 
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/Style/style.css" />
+    <!-- CSS & JS -->
+    <link rel="stylesheet" type="text/css" href="assets/Style/style.css"/>
+    <script src="assets/Scripts/main.js"></script>
 </head>
 <body>
     <!-- Content -->
-    <div class="presentation">
-        <div class="presentation-child">
-            <img src="https://cdn.discordapp.com/attachments/1131909261195235379/1132470800306421911/30e11211-5396-48bd-aa4e-fda3d6ed830e.png" alt="Profile picture" width="200" height="200">
-        </div>
-        <div class="presentation-child">
-            <h1>Welcome!</h1>
-            <h2>My name's <strong class="letter-P">P</strong>au <strong class="letter-G">G</strong>asull</h2>
-            <p>I'm a Computer Science student. A nerd in my free time.</p>
-            <p>I lose my mind with <b class="art">art</b>, <b class="music">music</b>, and doing projects related to the <b class="wot">world of technology</b>! </p>
-        </div>
+    <div id="title">
+        <h1>Welcome!</h1>
+        <hr>
     </div>
-    <div class="about-me">
+    <div id="presentation">
+        <div class="presentation-child">
+            <img src="assets/imgs/Profile.png" alt="Profile picture" width="300" height="300">
+        </div>
+        <div class="presentation-child">
+            <h3>My name's Pau Gasull</h3>
+            <p>I'm a 21-years-old Computer Science student. A nerd in my free time.</p> <br>
+            <p>I lose my mind with <b class="art">art</b>, <b class="music">music</b>, and doing projects related to the <b class="wot">world of technology</b>!</p>
+            <p>I have a <a href="#">YouTube</a> channel where I upload my songs and, in a future, Dev-logs and trailers for my Games and Software.</p>
+            <p>I also love drawing and art in general. I do both Digital and Traditional art and I upload it into my <a href="#">Ko-Fi</a>.</p> <br>
+            <p>Stay tuned to see the progress!</p>
+        </div>
+    </div> <br>
+    <div id="about-me">
         <p><a href="#">Learn more</a> about me and my interests!</p>
     </div>
-    <hr>
+    <hr class="separator">
     <article>
         <h3>Take a look to some of my work:</h3>
-        <div class="work-links">
+        <div id="work-links">
             <span><button title="Take a look to my drawings!" type="button" class="button-art">Art</button></span>
             <span><button title="Hear some of my best songs!" type="button" class="button-music">Music</button></span>
             <span><button title="Learn about my favourite hobby!" type="button" class="button-technology">Technology</button></span>
@@ -42,22 +60,21 @@
         <table class="social-links">
             <tbody>
                 <tr>
-                    <td><a href="#">Youtube</a></td>
-                    <td><a href="#">Instagram</a></td>
-                    <td><a href="#">Twitter</a></td>
-                    <td><a href="#">Google Play</a></td>
+                    <td><a href="https://www.youtube.com/channel/UCZX5iYjYGn6yQ0300pUquzQ">Youtube</a></td>
+                    <td><a href="https://www.instagram.com/paugasull/">Instagram</a></td>
+                    <td><a href="https://twitter.com/gasull_pau">Twitter</a></td>
+                    <!--<td><a href="#">Google Play</a></td> -->
                 </tr>
                 <tr>
-                    <td><a href="#">Itch.io</a></td>
-                    <td><a href="#">Gamejolt</a></td>
-                    <td><a href="#">Ko-fi</a></td>
-                    <td><a href="#">Etsy</a></td>
+                    <td><a href="https://rcbgames.itch.io/">Itch.io</a></td>
+                    <td><a href="https://gamejolt.com/@RCBGames">Gamejolt</a></td>
+                    <td><a href="https://www.ko-fi-com/paugasull">Ko-fi</a></td>
+                    <td><a href="https://rcbartstudio.etsy.com/">Etsy</a></td>
                 </tr>
             </tbody>
         </table>
-        <p><small>Contact me via Email: <a href="mailto:paugasullvicens@gmail.com">paugasullvicens@gmail.com</a></small></p>
+        <p id="contact-mail"><small>Contact me via Email: <a href="mailto:paugasullvicens@gmail.com">paugasullvicens@gmail.com</a></small></p>
     </footer>
-    <script src="/assets/Scripts/main.js" async></script>
-
+    <p><small id="copyright">2023 Pau Gasull. All Rights Reserved</small></p>
 </body>
 </html>

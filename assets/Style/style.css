@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image:linear-gradient(black,#2b2b2b);
+    background-image:linear-gradient(#2b2b2b, black);
     background-repeat:no-repeat;
     background-attachment:scroll;
     background-position:center center;
@@ -17,11 +17,18 @@ body {
     margin-right: 2%;
 }
 
-hr {
-    border-color:rgba(255,255,255,0.7);
+.separator {
     height:3px;
     width:50%;
     border-radius:20px;
+}
+
+#title h1{
+    background-size: cover;
+    text-align: center;
+    font-size: 45px;
+    text-shadow: #5fafff 1px 1px 10px;
+    margin-bottom: 0;
 }
 
 footer {
@@ -29,10 +36,11 @@ footer {
     background-color:#2b2b2b;
     width:100%;
     height:100%;
+    border-radius: 10px;
 }
 
 footer p {
-    margin-left:10%;
+    margin-left:15%;
 }
 
 footer .social-links {
@@ -50,7 +58,7 @@ footer td {
 
 footer h3 {
     padding-top:15px;
-    margin-left:12%;
+    margin-left:15%;
     width:100%;
     height:100%;
 }
@@ -63,7 +71,11 @@ footer .social-links a {
     height:100%;
 }
 
-.presentation {
+footer #contact-mail {
+    padding-bottom: 5px;
+}
+
+#presentation {
     display:flex;
     justify-content:center;
     width:100%;
@@ -71,26 +83,26 @@ footer .social-links a {
 }
 
 .presentation-child {
-    margin:auto 35px;
-    width:100%;
-    height:100%;
+    margin:auto 30px;
 }
 
-.presentation img {
+#presentation img {
     background-color:#424242;
     border-radius:100%;
     border:#fff solid 3px;
     box-shadow:3px 3px 5px #fff;
     float:right;
     margin-top: 5px;
+
 }
-.about-me {
-    margin:auto 15%;
+
+#about-me {
+    margin:2% 15%;
     width:95%;
     height:95%;
 }
 
-.about-me a{
+#about-me a{
     text-decoration: underline;
     cursor: pointer;
     color: #8cd024;
@@ -117,27 +129,8 @@ footer .social-links a {
     height:100%;
 }
 
-.letter-P {
-    color:#5e625f;
-    width:100%;
-    height:100%;
-}
-
-.letter-G {
-    color:#d8bb99;
-    width:100%;
-    height:100%;
-}
-
-.letter-P,.letter-G {
-    font-size:110%;
-    text-shadow:-1px 0 white,0 1px white,1px 0 white,0 -1px #fff;
-    width:100%;
-    height:100%;
-}
-
 article {
-    margin:auto 15%;
+    margin:2% 15%;
 }
 
 article h3 {
@@ -145,18 +138,18 @@ article h3 {
     height:100%;
 }
 
-.work-links {
+#work-links {
     display:flex;
     flex-direction:row;
     justify-content:space-evenly;
 }
 
-.work-links span {
+#work-links span {
     margin:auto 1%;
     width:100%;
 }
 
-.work-links button {
+#work-links button {
     color:#000;
     border-radius:10px;
     padding:10px;
@@ -169,7 +162,7 @@ article h3 {
     width:100%;
 }
 
-.work-links button:hover {
+#work-links button:hover {
     border-radius:5px;
     transform:translateY(-3px);
     box-shadow:0 3px 6px #fff;
@@ -177,10 +170,9 @@ article h3 {
     transition:border-radius .25s,transform .2s,box-shadow .1s,font-weight .2s;
     width:100%;
     height:100%;
-    cursor: help;
 }
 
-.work-links button:active {
+#work-links button:active {
     border-radius:5px;
     transform:translateY(1px);
     box-shadow:0 0 #fff;
@@ -190,16 +182,22 @@ article h3 {
     height:100%;
 }
 
-.work-links .button-art:hover {
+#work-links .button-art:hover {
     background-color:#ff8ec7;
 }
 
-.work-links .button-technology:hover {
+#work-links .button-technology:hover {
     background-color:#5fafff;
 }
 
-.work-links .button-music:hover {
+#work-links .button-music:hover {
     background-color:#ffe259;
+}
+
+#copyright{
+    font-size: 11px;
+    font-style: italic;
+    padding-top: 2%;
 }
 
 /* Media query for small screens (e.g., phones) */
@@ -223,8 +221,9 @@ article h3 {
         display: table-cell;
     }
 
-    .presentation {
+    #presentation {
         display: block;
+        text-align: center;
         width: 95%;
         height: 95%;
     }
@@ -235,15 +234,17 @@ article h3 {
         padding: 2%;
     }
 
-    .about-me {
+    #about-me {
         margin:0 2%;
         width:95%;
         height:95%;
     }
 
-    .presentation img {
+    #presentation img {
         background-color: #424242;
         border-radius: 100%;
+        height: 90%;
+        width: 90%;
         border: #fff solid 3px;
         box-shadow: 3px 3px 5px #fff;
         margin: auto;
