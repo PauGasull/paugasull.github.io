@@ -1,6 +1,7 @@
 * {
     font-family:Consolas,monospaced,monospace;
     color:#fff;
+    /*border: 1px solid red;*/
 }
 
 body {
@@ -29,6 +30,9 @@ body {
     font-size: 45px;
     text-shadow: #5fafff 1px 1px 10px;
     margin-bottom: 0;
+}
+#title hr{
+    margin-bottom: 3%;
 }
 
 footer {
@@ -72,7 +76,7 @@ footer .social-links a {
 }
 
 footer #contact-mail {
-    padding-bottom: 5px;
+    padding-bottom: 20px;
 }
 
 #presentation {
@@ -91,7 +95,6 @@ footer #contact-mail {
     border-radius:100%;
     border:#fff solid 3px;
     box-shadow:3px 3px 5px #fff;
-    float:right;
     margin-top: 5px;
 
 }
@@ -158,7 +161,6 @@ article h3 {
     box-shadow:0 1px 5px #fff;
     transition:border-radius .5s;
     border:2px solid #000;
-    cursor:pointer;
     width:100%;
 }
 
@@ -197,7 +199,20 @@ article h3 {
 #copyright{
     font-size: 11px;
     font-style: italic;
-    padding-top: 2%;
+    margin-top: 2%;
+}
+
+#back {
+    position: fixed;
+    transform: translateY(-35px);
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+::-moz-selection, ::selection { /* Code for Firefox */
+    background: #77216F;
+    color: white;
+    font-style: italic;
 }
 
 /* Media query for small screens (e.g., phones) */
