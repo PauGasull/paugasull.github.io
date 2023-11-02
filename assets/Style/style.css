@@ -5,17 +5,16 @@
 }
 
 body {
-    background-image:linear-gradient(#2b2b2b, black);
+    background-image:url(/assets/imgs/Background.jpg);
     background-repeat:no-repeat;
-    background-attachment:scroll;
-    background-position:center center;
+    background-position:center;
     background-size:cover;
     height:100%;
     width:95%;
     overflow:scroll;
     overflow-x:hidden;
-    margin-left: 2%;
-    margin-right: 2%;
+    padding: 0;
+    margin: 0 2%;
 }
 
 .separator {
@@ -32,7 +31,7 @@ body {
     margin-bottom: 0;
 }
 #title hr{
-    margin-bottom: 3%;
+    margin-bottom: 25px;
 }
 
 footer {
@@ -88,6 +87,10 @@ footer #contact-mail {
 
 .presentation-child {
     margin:auto 30px;
+}
+
+.presentation-child a {
+    text-decoration: underline;
 }
 
 #presentation img {
@@ -203,16 +206,21 @@ article h3 {
 }
 
 #back {
-    position: fixed;
-    transform: translateY(-35px);
     font-weight: lighter;
     font-size: 12px;
 }
 
-::-moz-selection, ::selection { /* moz-selection in needed for Firefox */
+body::-moz-selection, body::selection { /* moz-selection in needed for Firefox */
     background: #77216F;
     color: white;
-    font-style: italic;
+}
+
+#general-information {
+    display: grid;
+}
+
+#general-information tr {
+    margin: auto 100px;
 }
 
 /* Media query for small screens (e.g., phones) */
