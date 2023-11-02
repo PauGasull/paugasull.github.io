@@ -209,7 +209,7 @@ article h3 {
     font-size: 12px;
 }
 
-::-moz-selection, ::selection { /* Code for Firefox */
+::-moz-selection, ::selection { /* moz-selection in needed for Firefox */
     background: #77216F;
     color: white;
     font-style: italic;
