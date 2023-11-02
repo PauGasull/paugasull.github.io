@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image:url(/assets/imgs/Background.jpg);
+    background-image:url(/assets/Imgs/Background.jpg);
     background-repeat:no-repeat;
     background-position:center;
     background-size:cover;
@@ -30,9 +30,6 @@ body {
     text-shadow: #5fafff 1px 1px 10px;
     margin-bottom: 0;
 }
-#title hr{
-    margin-bottom: 25px;
-}
 
 footer {
     color:#fff;
@@ -46,13 +43,13 @@ footer p {
     margin-left:15%;
 }
 
-footer .social-links {
+footer .social-links, #general-information .info-data {
     text-align:center;
     margin:0 auto;
     table-layout:fixed;
 }
 
-footer td {
+footer td, #general-information td {
     padding-bottom:15px;
     overflow:hidden;
     text-overflow:ellipsis;
@@ -78,14 +75,14 @@ footer #contact-mail {
     padding-bottom: 20px;
 }
 
-#presentation {
+#presentation, #academic, #skills-lang {
     display:flex;
     justify-content:center;
     width:100%;
     height:100%;
 }
 
-.presentation-child {
+.presentation-child{
     margin:auto 30px;
 }
 
@@ -93,13 +90,12 @@ footer #contact-mail {
     text-decoration: underline;
 }
 
-#presentation img {
+#presentation img, #academic img {
     background-color:#424242;
     border-radius:100%;
     border:#fff solid 3px;
     box-shadow:3px 3px 5px #fff;
     margin-top: 5px;
-
 }
 
 #about-me {
@@ -199,7 +195,7 @@ article h3 {
     background-color:#ffe259;
 }
 
-#copyright{
+#copyright {
     font-size: 11px;
     font-style: italic;
     margin-top: 2%;
@@ -210,17 +206,21 @@ article h3 {
     font-size: 12px;
 }
 
-body::-moz-selection, body::selection { /* moz-selection in needed for Firefox */
-    background: #77216F;
-    color: white;
+#general-information,#academic-general {
+    text-align: center;
+    margin-bottom: 5%;
 }
 
-#general-information {
-    display: grid;
+#general-information h2, #academic-general h2, #skills-lang h2{
+    font-size: 35px;
 }
 
-#general-information tr {
-    margin: auto 100px;
+#general-information td{
+    padding: 0 35px;
+}
+
+#skills, #lang{
+    margin: auto 10%;
 }
 
 /* Media query for small screens (e.g., phones) */
@@ -236,15 +236,15 @@ body::-moz-selection, body::selection { /* moz-selection in needed for Firefox *
         width: 95%;
     }
 
-    footer tr > * {
+    footer tr > *, #general-information tr > * {
         display: block;
     }
 
-    footer tr {
+    footer tr, #general-information tr{
         display: table-cell;
     }
 
-    #presentation {
+    #presentation, #academic {
         display: block;
         text-align: center;
         width: 95%;
@@ -261,6 +261,9 @@ body::-moz-selection, body::selection { /* moz-selection in needed for Firefox *
         margin:0 2%;
         width:95%;
         height:95%;
+    }
+    #academic img{
+        margin-right: auto;
     }
 
     #presentation img {

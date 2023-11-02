@@ -18,7 +18,7 @@
 
     <!-- Title and Icon -->
     <title>Pau Gasull - Home</title>
-    <link rel="icon" href="assets/imgs/Ico.png">
+    <link rel="icon" href="assets/Imgs/Ico.png">
 
     <!-- CSS & JS -->
     <link rel="stylesheet" type="text/css" href="assets/Style/style.css"/>
@@ -29,10 +29,10 @@
 <div id="title">
     <h1>About Me!</h1>
     <hr>
-    <p><a id= "back" href="index.html">< Back</a></p>
 </div>
 <div id="general-information">
-    <table>
+    <h2>General Information</h2>
+    <table class="info-data">
         <tbody>
         <tr>
             <td><b>Home Adress: </b> Roses, Girona (17480)</td>
@@ -43,7 +43,43 @@
         </tbody>
     </table>
 </div>
-
+<div id="academic-general">
+    <h2>Academic Education</h2>
+    <div id="academic">
+        <div class="accademic-child">
+            <img src="/assets/Imgs/ElsGrecs.jpg" alt="Primary School" width="170" height="170">
+            <p><b>2004 - 2014</b></p>
+            <p>Primary School</p>
+            <p><i>Escola Els Grecs - Roses, Girona</i></p>
+        </div>
+        <div class="accademic-child">
+            <img src="/assets/Imgs/CapNorfeu.png" alt="Secondary School" width="170" height="170">
+            <p><b>2014-2020</b></p>
+            <p>High School and Technological Baccalaureate</p>
+            <p><i>IES Cap Norfeu - Roses, Girona</i></p>
+        </div>
+        <div class="accademic-child">
+            <img src="/assets/Imgs/EPS.jpg" alt="University" width="170" height="170">
+            <p><b>2020-Present</b></p>
+            <p>Degree in Computer Science</p>
+            <p><i>Escola Politècnica Superior - Girona, Girona</i></p>
+        </div>
+    </div>
+</div>
+<div id="skills-lang">
+    <div id="skills">
+        <h2>Skills</h2>
+    </div>
+    <div id="lang">
+        <h2>Languages</h2>
+    </div>
+</div>
+<hr class="separator">
+<article id="work-links"> <!-- This is not a button with a link to any of my projects, this is the back button. But I want (nor need) to change the id name if I can reuse the index.html one    -->
+    <span style="visibility: hidden"><button></button></span>
+    <span><button title="Go back to the Welcome! page" type="button" class="button-back" onclick="history.back()">Back</button></span> <!--only works if the last page you visited is the Welcome! page, if not, it will load the last webpage you visited TODO: Use JS to load the index.html page; with css not only the plain HTML -->
+    <span style="visibility: hidden"><button></button></span>
+</article>
 <p><small id="copyright">2023 Pau Gasull. All Rights Reserved</small></p>
 </body>
 </html>
