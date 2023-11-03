@@ -232,6 +232,7 @@ article h3 {
 
 #skills li, #lang li {
     margin: 5px 0;
+    text-align: left;
 }
 
 #jobs .job-child+.job-child:before{
