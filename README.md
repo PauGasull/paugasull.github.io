@@ -33,4 +33,4 @@ As I don't have that much color in the background, I have not imposed myself a s
 
 I also wanted to do a visually simple web, I accomplished this not only because of the colors but, because I managed to put all the important information, explained on the **Information Architecture**, on the screen without needing to scroll much. 
 
-[> Figmaa Project](https://www.figma.com/file/p2IKifEroE3dixd3zXzcRe/CV-Web?type=design&node-id=0%3A1&mode=design&t=lrE3ftoNYjMRUBqL-1)
+[> Figma Project](https://www.figma.com/file/p2IKifEroE3dixd3zXzcRe/CV-Web?type=design&node-id=0%3A1&mode=design&t=lrE3ftoNYjMRUBqL-1)
