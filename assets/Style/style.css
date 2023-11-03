@@ -82,7 +82,7 @@ footer #contact-mail {
     height:100%;
 }
 
-.presentation-child{
+.presentation-child {
     margin:auto 30px;
 }
 
@@ -206,13 +206,14 @@ article h3 {
     font-size: 12px;
 }
 
-#general-information,#academic-general {
+#general-information, #academic-general {
     text-align: center;
     margin-bottom: 5%;
 }
 
 #general-information h2, #academic-general h2, #skills-lang h2{
     font-size: 35px;
+    text-align: center;
 }
 
 #general-information td{
@@ -220,7 +221,13 @@ article h3 {
 }
 
 #skills, #lang{
-    margin: auto 10%;
+    margin: 0 10%;
+}
+
+#skills ul, #lang ul {
+    list-style-type: square;
+    justify-content: center;
+    align-content: center;
 }
 
 /* Media query for small screens (e.g., phones) */
@@ -244,11 +251,26 @@ article h3 {
         display: table-cell;
     }
 
-    #presentation, #academic {
+    #presentation, #academic, #skills-lang  {
         display: block;
         text-align: center;
         width: 95%;
         height: 95%;
+    }
+
+    #skills-lang h2{
+        margin: 7% 0 2% 0;
+    }
+
+    #skills-lang ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #skills-lang li{
+        list-style: none;
+        margin: 0 0 5% 0;
     }
 
     .presentation-child {
