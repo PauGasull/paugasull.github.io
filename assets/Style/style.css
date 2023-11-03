@@ -230,6 +230,10 @@ article h3 {
     align-content: center;
 }
 
+#skills li, #lang li {
+    margin: 5px 0;
+}
+
 #jobs .job-child+.job-child:before{
     content: "<-->";
 }
