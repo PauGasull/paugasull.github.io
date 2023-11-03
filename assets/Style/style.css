@@ -206,12 +206,12 @@ article h3 {
     font-size: 12px;
 }
 
-#general-information, #academic-general {
+#general-information, #academic-general,#skills-lang, #jobs-general {
     text-align: center;
     margin-bottom: 5%;
 }
 
-#general-information h2, #academic-general h2, #skills-lang h2{
+#general-information h2, #academic-general h2, #skills-lang h2, #jobs-general h2{
     font-size: 35px;
     text-align: center;
 }
@@ -228,6 +228,10 @@ article h3 {
     list-style-type: square;
     justify-content: center;
     align-content: center;
+}
+
+#jobs .job-child+.job-child:before{
+    content: "<-->";
 }
 
 /* Media query for small screens (e.g., phones) */
