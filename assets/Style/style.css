@@ -239,6 +239,39 @@ article h3 {
     content: "<-->";
 }
 
+/* Works on common browsers */
+::selection {
+    background: #77216F;
+    color: white;
+    font-style: italic;
+}
+
+/* Mozilla based browsers */
+::-moz-selection {
+    background: #77216F;
+    color: white;
+    font-style: italic;
+}
+
+/*For Other Browsers */
+::-o-selection {
+    background: #77216F;
+    color: white;
+    font-style: italic;
+}
+
+::-ms-selection {
+    background-color: #352e7e;
+    color: #fff;
+}
+
+/* For Webkit */
+::-webkit-selection {
+    background: #77216F;
+    color: white;
+    font-style: italic;
+}
+
 /* Media query for small screens (e.g., phones) */
 @media only screen and (max-width:480px) {
     .work-links {
