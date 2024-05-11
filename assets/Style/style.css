@@ -63,14 +63,12 @@
     content: "<-->";
 }
 
-/* Works on common browsers */
 ::selection {
     background: #77216F;
     color: white;
     font-style: italic;
 }
 
-/* Mozilla based browsers */
 ::-moz-selection {
     background: #77216F;
     color: white;
@@ -78,17 +76,17 @@
 }
 
 .social-links {
-    width: 30%; /* O el valor deseado */
-    height: 100px; /* O el valor deseado */
+    width: 30%;
+    height: 100px;
 }
 
 .social-links a {
-    position: relative; /* Asegura que los iconos estén posicionados relativamente */
+    position: relative;
     display: inline-block;
     transition: transform 0.3s ease;
     color: inherit;
     filter: grayscale(100%) brightness(70%);
-    z-index: 1; /* Establece el índice Z para que los iconos estén por encima de otros elementos */
+    z-index: 1;
     font-size: 20px;
 
     padding: 12px;
@@ -99,10 +97,9 @@
 .social-links a:hover {
     filter: none;
     transform: scale(1.5);
-    z-index: 2; /* Asegura que los iconos escalados estén por encima de otros elementos */
+    z-index: 2;
 }
 
-/* Establecer tono de gris específico para todos los íconos */
 .social-links .fa {
     color: #A0A0A0;
 }
@@ -394,8 +391,8 @@ article h3 {
     .social-links{
         width: 60%;
         height: 100%;
-        padding-right: 12%; /* Ajustar la posición a la izquierda */
-        flex-direction: column; /* Cambiar la dirección a vertical */
-        align-items: center; /* Centrar los iconos verticalmente */
+        padding-right: 12%;
+        flex-direction: column;
+        align-items: center;
     }
 }
