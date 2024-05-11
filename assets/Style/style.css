@@ -4,6 +4,118 @@
     /*border: 1px solid red;*/
 }
 
+#work-links .button-technology:hover {
+    background-color:#5fafff;
+}
+
+#work-links .button-music:hover {
+    background-color:#ffe259;
+}
+
+#work-links .button-art:hover {
+    background-color:#ff8ec7;
+}
+
+#copyright {
+    font-size: 11px;
+    font-style: italic;
+    margin-top: 2%;
+}
+
+#back {
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+#general-information, #academic-general, #skills-lang, #jobs-general {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+#general-information h2, #academic-general h2, #skills-lang h2, #jobs-general h2{
+    font-size: 35px;
+    text-align: center;
+}
+#jobs-general ul{
+    list-style: square inside;
+}
+
+#general-information td{
+    padding: 0 35px;
+}
+
+#skills, #lang{
+    margin: 0 10%;
+}
+
+#skills ul, #lang ul {
+    list-style-type: square;
+    justify-content: center;
+    align-content: center;
+}
+
+#skills li, #lang li {
+    margin: 5px 0;
+    text-align: left;
+}
+
+#jobs .job-child+.job-child:before{
+    content: "<-->";
+}
+
+/* Works on common browsers */
+::selection {
+    background: #77216F;
+    color: white;
+    font-style: italic;
+}
+
+/* Mozilla based browsers */
+::-moz-selection {
+    background: #77216F;
+    color: white;
+    font-style: italic;
+}
+
+.social-links {
+    width: 30%; /* O el valor deseado */
+    height: 100px; /* O el valor deseado */
+}
+
+.social-links a {
+    position: relative; /* Asegura que los iconos estén posicionados relativamente */
+    display: inline-block;
+    transition: transform 0.3s ease;
+    color: inherit;
+    filter: grayscale(100%) brightness(70%);
+    z-index: 1; /* Establece el índice Z para que los iconos estén por encima de otros elementos */
+    font-size: 20px;
+
+    padding: 12px;
+    margin-bottom: 9px;
+    margin-top: 9px;
+}
+
+.social-links a:hover {
+    filter: none;
+    transform: scale(1.5);
+    z-index: 2; /* Asegura que los iconos escalados estén por encima de otros elementos */
+}
+
+/* Establecer tono de gris específico para todos los íconos */
+.social-links .fa {
+    color: #A0A0A0;
+}
+
+/* Establecer colores personalizados solo cuando el ratón está sobre los íconos */
+.social-links a:hover .fa-youtube { color: #c4302b; }
+.social-links a:hover .fa-instagram { color: #bc2a8d; }
+.social-links a:hover .fa-x-twitter { color: #1DA1F2; }
+.social-links a:hover .fa-linkedin { color: #0a66c2; }
+.social-links a:hover .fa-itch-io { color: #fa5c5c; }
+.social-links a:hover .fa-google-play { color: #FBC02D; }
+
+
 body {
     background-image:url(/assets/Imgs/Background.jpg);
     background-repeat:no-repeat;
@@ -183,79 +295,6 @@ article h3 {
     height:100%;
 }
 
-#work-links .button-art:hover {
-    background-color:#ff8ec7;
-}
-
-#work-links .button-technology:hover {
-    background-color:#5fafff;
-}
-
-#work-links .button-music:hover {
-    background-color:#ffe259;
-}
-
-#copyright {
-    font-size: 11px;
-    font-style: italic;
-    margin-top: 2%;
-}
-
-#back {
-    font-weight: lighter;
-    font-size: 12px;
-}
-
-#general-information, #academic-general, #skills-lang, #jobs-general {
-    text-align: center;
-    margin-bottom: 5%;
-}
-
-#general-information h2, #academic-general h2, #skills-lang h2, #jobs-general h2{
-    font-size: 35px;
-    text-align: center;
-}
-#jobs-general ul{
-    list-style: square inside;
-}
-
-#general-information td{
-    padding: 0 35px;
-}
-
-#skills, #lang{
-    margin: 0 10%;
-}
-
-#skills ul, #lang ul {
-    list-style-type: square;
-    justify-content: center;
-    align-content: center;
-}
-
-#skills li, #lang li {
-    margin: 5px 0;
-    text-align: left;
-}
-
-#jobs .job-child+.job-child:before{
-    content: "<-->";
-}
-
-/* Works on common browsers */
-::selection {
-    background: #77216F;
-    color: white;
-    font-style: italic;
-}
-
-/* Mozilla based browsers */
-::-moz-selection {
-    background: #77216F;
-    color: white;
-    font-style: italic;
-}
-
 /*For Other Browsers */
 /*
 ::-o-selection {
@@ -350,5 +389,13 @@ article h3 {
 
     html, body{
         overflow-x:hidden;
+    }
+
+    .social-links{
+        width: 60%;
+        height: 100%;
+        padding-right: 12%; /* Ajustar la posición a la izquierda */
+        flex-direction: column; /* Cambiar la dirección a vertical */
+        align-items: center; /* Centrar los iconos verticalmente */
     }
 }
