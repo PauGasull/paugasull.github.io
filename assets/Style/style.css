@@ -206,7 +206,7 @@ article h3 {
     font-size: 12px;
 }
 
-#general-information, #academic-general,#skills-lang, #jobs-general {
+#general-information, #academic-general, #skills-lang, #jobs-general {
     text-align: center;
     margin-bottom: 5%;
 }
@@ -214,6 +214,9 @@ article h3 {
 #general-information h2, #academic-general h2, #skills-lang h2, #jobs-general h2{
     font-size: 35px;
     text-align: center;
+}
+#jobs-general ul{
+    list-style: square inside;
 }
 
 #general-information td{
@@ -254,6 +257,7 @@ article h3 {
 }
 
 /*For Other Browsers */
+/*
 ::-o-selection {
     background: #77216F;
     color: white;
@@ -264,13 +268,15 @@ article h3 {
     background-color: #352e7e;
     color: #fff;
 }
-
+*/
 /* For Webkit */
+/*
 ::-webkit-selection {
     background: #77216F;
     color: white;
     font-style: italic;
 }
+*/
 
 /* Media query for small screens (e.g., phones) */
 @media only screen and (max-width:480px) {
