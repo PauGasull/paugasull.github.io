@@ -60,6 +60,22 @@
 
 #jobs .job-child+.job-child:before{
     content: "<-->";
+    font-size: 10px;
+}
+
+.job-child b{
+    color: #ffd700;
+}
+
+.job-child .project{
+}
+
+.job-child .in-progress{
+    color: #0a66c2;
+}
+
+.job-child .completed{
+    color: #8cd024;
 }
 
 ::selection {
@@ -103,7 +119,6 @@
     transform: translateY(0);
     transition: transform 0.3s;
 }
-
 
 .social-links a:hover .fa-youtube { color: #c4302b; }
 .social-links a:hover .fa-instagram { color: #bc2a8d; }
