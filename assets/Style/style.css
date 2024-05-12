@@ -35,12 +35,29 @@
     font-size: 35px;
     text-align: center;
 }
+
 #jobs-general ul{
     list-style: square inside;
 }
 
+#jobs{
+    margin: auto 2%;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2, 2fr);
+    grid-auto-rows: minmax(10%, auto);
+}
+
+#jobs div{
+}
+
 #general-information td{
-    padding: 0 35px;
+    padding: 0 25px;
+}
+
+#general-information i{
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 #skills, #lang{
@@ -58,16 +75,15 @@
     text-align: left;
 }
 
+/*
 #jobs .job-child+.job-child:before{
     content: "<-->";
     font-size: 10px;
 }
+*/
 
 .job-child b{
     color: #ffd700;
-}
-
-.job-child .project{
 }
 
 .job-child .in-progress{
@@ -91,15 +107,42 @@
 }
 
 .social-links {
+    width: 75%;
     display: grid;
-    gap: 10px;
+    gap: 15px;
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(50%, auto);
+    grid-auto-rows: minmax(20%, 50%);
 }
 
 .social-links a{
-    font-size: 20px;
+    position: relative;
+    font-size: 25px;
     transition: font-size 0.3s, transform 0.3s;
+}
+
+.social-links > div {
+    margin: 12% 7%;
+}
+
+.social-links a::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    border: 2px solid #ABABAB;
+    transition: transform 0.3s;
+    border-radius: 10%;
+}
+
+.social-links a:hover:before {
+    transform: translate(-50%, -57.2%) rotate(45deg);
+    border-radius: 0;
+    border: 2px solid white;
+    width: 65px;
+    height: 65px;
 }
 
 .social-links i{
@@ -107,7 +150,7 @@
 }
 
 .social-links a:hover{
-    font-size: 25px;
+    font-size: 30px;
     transition: font-size 0.3s, transform 0.3s;
 }
 
@@ -269,7 +312,7 @@ article h3 {
     justify-content:space-evenly;
 }
 
-#work-links span {
+#work-links a {
     margin:auto 1%;
     width:100%;
 }
@@ -317,6 +360,10 @@ article h3 {
     .work-links span {
         margin: 2% auto;
         width: 95%;
+    }
+
+    footer #contact-mail {
+        margin: 5% 5%;
     }
 
     footer tr > *, #general-information tr > * {
@@ -379,4 +426,34 @@ article h3 {
     html, body{
         overflow-x:hidden;
     }
+
+    .social-links a::before{
+        content: '';
+        border: transparent;
+    }
+
+    .social-links a:hover:before {
+        border-radius: 0;
+        border: 2px solid transparent;
+    }
+
+    .social-links i{
+        color: #a0a0a0;
+    }
+
+    .social-links a:hover i {
+        transform: translateY(-5px);
+        transition: transform 0.3s;
+    }
+    .social-links a i {
+        transform: translateY(0);
+        transition: transform 0.3s;
+    }
+
+    .social-links .fa-youtube { color: #c4302b; }
+    .social-links .fa-instagram { color: #bc2a8d; }
+    .social-links .fa-x-twitter { color: #1DA1F2; }
+    .social-links .fa-linkedin { color: #0a66c2; }
+    .social-links .fa-itch-io { color: #fa5c5c; }
+    .social-links .fa-google-play { color: #FBC02D; }
 }
