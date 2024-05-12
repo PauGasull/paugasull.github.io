@@ -122,6 +122,7 @@
 
 .social-links > div {
     margin: 12% 7%;
+    height: 45px;
 }
 
 .social-links a::before{
@@ -350,7 +351,7 @@ article h3 {
 }
 
 /* Media query for small screens (e.g., phones) */
-@media only screen and (max-width:480px) {
+@media only screen and (max-width:700px) {
     .work-links {
         display: flex;
         flex-direction: column;
@@ -434,7 +435,7 @@ article h3 {
 
     .social-links a:hover:before {
         border-radius: 0;
-        border: 2px solid transparent;
+        border: transparent;
     }
 
     .social-links i{
@@ -445,6 +446,7 @@ article h3 {
         transform: translateY(-5px);
         transition: transform 0.3s;
     }
+
     .social-links a i {
         transform: translateY(0);
         transition: transform 0.3s;
