@@ -169,7 +169,8 @@
 .social-links a:hover .fa-x-twitter { color: #1DA1F2; }
 .social-links a:hover .fa-linkedin { color: #0a66c2; }
 .social-links a:hover .fa-itch-io { color: #fa5c5c; }
-.social-links a:hover .fa-google-play { color: #FBC02D; }
+.social-links a:hover .fa-github { color: #F1502F; }
+.social-links a:hover .fa-google-play { color: #fbc02d; }
 
 body {
     background-image:url(/assets/Imgs/Background.jpg);
@@ -428,28 +429,25 @@ article h3 {
         overflow-x:hidden;
     }
 
-    .social-links a::before{
-        content: '';
-        border: transparent;
-    }
-
-    .social-links a:hover:before {
+    .social-links a::before {
+        transform: none;
         border-radius: 0;
-        border: transparent;
+        border: none;
+        width: auto;
+        height: auto;
     }
 
-    .social-links i{
-        color: #a0a0a0;
-    }
-
-    .social-links a:hover i {
-        transform: translateY(-5px);
-        transition: transform 0.3s;
+    .social-links a:hover::before {
+        transform: none;
+        border: none;
     }
 
     .social-links a i {
-        transform: translateY(0);
-        transition: transform 0.3s;
+        transform: none;
+    }
+
+    .social-links a:hover {
+        font-size: 25px;
     }
 
     .social-links .fa-youtube { color: #c4302b; }
@@ -457,5 +455,6 @@ article h3 {
     .social-links .fa-x-twitter { color: #1DA1F2; }
     .social-links .fa-linkedin { color: #0a66c2; }
     .social-links .fa-itch-io { color: #fa5c5c; }
+    .social-links .fa-github { color: #F1502F; }
     .social-links .fa-google-play { color: #FBC02D; }
 }
