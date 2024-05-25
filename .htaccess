@@ -1,0 +1,5 @@
+# Enable mod_rewrite
+RewriteEngine On
+
+# Remove /assets/pages/ from URL
+RewriteRule ^assets/pages/(.*)$ /$1 [L,R=301]
