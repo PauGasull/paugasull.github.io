@@ -385,6 +385,10 @@ article h3 {
         display: block;
     }
 
+    footer {
+        width: 95%;
+    }
+
     footer tr, #general-information tr{
         display: table-cell;
     }
