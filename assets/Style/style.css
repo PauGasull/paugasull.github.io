@@ -1,18 +1,35 @@
+:root{
+    --colorMusic: #FFE259;
+    --colorArt: #FF8EC7;
+    --colorTech: #5FAFFF;
+
+    --colorStrong: #FFD700;
+    --colorImportant: #8CD024;
+    --colorInProgress: #0A66C2;
+
+    --colorSelection: #77216F;
+
+    --colorGray: #A0A0A0;
+    --colorLightGray: #ABABAB;
+
+    --colorBackground: #424242;
+}
+
 * {
     font-family:Consolas,monospaced,monospace;
-    color:#fff;
+    color:white;
 }
 
 #work-links .button-technology:hover {
-    background-color:#5fafff;
+    background-color:var(--colorTech);
 }
 
 #work-links .button-music:hover {
-    background-color:#ffe259;
+    background-color:var(--colorMusic);
 }
 
 #work-links .button-art:hover {
-    background-color:#ff8ec7;
+    background-color:var(--colorArt);
 }
 
 #copyright {
@@ -75,32 +92,19 @@
     text-align: left;
 }
 
-/*
-#jobs .job-child+.job-child:before{
-    content: "<-->";
-    font-size: 10px;
-}
-*/
-
 .job-child b{
-    color: #ffd700;
+    color: var(--colorStrong);
 }
 
 .job-child .in-progress{
-    color: #0a66c2;
+    color: var(--colorInProgress);
 }
 
 .job-child .completed{
-    color: #8cd024;
+    color: var(--colorImportant);
 }
 
-::selection {
-    background: #77216F;
-    color: white;
-    font-style: italic;
-}
-
-::-moz-selection {
+::selection, ::-moz-selection {
     background: #77216F;
     color: white;
     font-style: italic;
@@ -133,7 +137,7 @@
     transform: translate(-50%, -50%);
     width: 60px;
     height: 60px;
-    border: 2px solid #ABABAB;
+    border: 2px solid var(--colorLightGray);
     transition: transform 0.3s;
     border-radius: 10%;
 }
@@ -147,7 +151,7 @@
 }
 
 .social-links i{
-    color: #a0a0a0;
+    color: var(--colorGray);
 }
 
 .social-links a:hover{
@@ -162,6 +166,10 @@
 .social-links a i {
     transform: translateY(0);
     transition: transform 0.3s;
+}
+
+.youtube-link{
+    color: #c4302b;
 }
 
 .social-links a:hover .fa-youtube { color: #c4302b; }
@@ -195,7 +203,7 @@ body {
     background-size: cover;
     text-align: center;
     font-size: 45px;
-    text-shadow: #5fafff 1px 1px 10px;
+    text-shadow: var(--colorTech) 1px 1px 10px;
     margin-bottom: 0;
 }
 
