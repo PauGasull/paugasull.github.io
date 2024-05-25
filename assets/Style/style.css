@@ -439,7 +439,8 @@ article h3 {
     }
 
     html, body{
-        overflow-x:hidden;
+        width: 100%;
+        /*overflow-x:hidden;*/
     }
 
     .social-links a::before {
