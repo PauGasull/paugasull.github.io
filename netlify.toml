@@ -1,0 +1,5 @@
+[[redirects]]
+from = "/assets/pages/*"
+to = "/:splat"
+status = 301
+force = true
