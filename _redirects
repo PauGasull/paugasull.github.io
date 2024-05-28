@@ -1,1 +1,1 @@
-/assets/pages/about-me  /about-me
+/assets/pages/*  /:splat  301!
