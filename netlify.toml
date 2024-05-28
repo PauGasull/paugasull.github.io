@@ -1,5 +1,5 @@
 [[redirects]]
 from = "/assets/pages/about-me"
-to = "/about-me"
+to = "/:splat"
 status = 301
 force = false
