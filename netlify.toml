@@ -1,9 +1,6 @@
-[build]
-publish = "public"
-command = "npm run build"
-
 [[redirects]]
-from = "/assets/pages/*"
-to = "/:splat"
+from = "/Pages/assets/about-me"
+to = "/about-me"
 status = 301
-force = true
+force = false
+
