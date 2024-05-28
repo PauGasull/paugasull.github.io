@@ -1,5 +1,5 @@
 [[redirects]]
-from = "/assets/Pages/about-me"
+from = "/assets/pages/about-me"
 to = "/about-me"
 status = 301
 force = false
