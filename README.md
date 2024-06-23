@@ -1,6 +1,6 @@
 # Pau Gasull's Webpage
 The main focus of this project was to have a _Hub_ where to have all the information about my projects and works.
-At this moment I don't really have many projects, so the buttons don't work. But they will in the future.
+At this moment I don't really have many projects, so the buttons don't work. But they will.
 
 ## Target user profile
 The target of my webpage is, basically, two type of people: 
@@ -31,6 +31,10 @@ I tried to replicate a mix between YouTube (the figma project I did in the Figma
 
 As I don't have that much color in the background, I have not imposed myself a specific color palette. The web's icon is using my profile picture colors, meanwhile I used light and bright colors to give emphasis on links and important things in the web, thanks to this I can redirect the users' view to where I want without being too exaggerated. At nearly the end, I added three buttons that are plain white if the mouse is not hovering and aren't clicked, by doing this I'm asking the user to click them without noticing it; the buttons highlights in the colors I used in the explanation next to the profile image, so I don't break the coherence. 
 
-I also wanted to do a visually simple web, I accomplished this not only because of the colors but, because I managed to put all the important information, explained on the **Information Architecture**, on the screen without needing to scroll much. 
-
+I also wanted to do a visually simple web, I accomplished this not only because of the colors but, because I managed to put all the important information, explained on the **Information Architecture**, on the screen without needing to scroll much.
+<!--
 [> Figma Project](https://www.figma.com/file/p2IKifEroE3dixd3zXzcRe/CV-Web?type=design&node-id=0%3A1&mode=design&t=lrE3ftoNYjMRUBqL-1)
+-->
+## For non-teachers users
+This website started as a project for the Multimedia and User Interface subject where we used Figma to design the page. After that I kept updating and polishing it. 
+Now it's a fully functional personal website where you can see my work, projects, and hobbies and, in the near future, buy things.
