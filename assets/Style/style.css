@@ -1,19 +1,14 @@
 :root {
-    --colorMusic: #FFE259;
+Ad    --colorWriting: #FFE259;
     --colorArt: #FF8EC7;
     --colorTech: #5FAFFF;
-
     --colorStrong: #FFD700;
     --colorImportant: #8CD024;
     --colorInProgress: #0A66C2;
-
     --colorSelection: #77216F;
-
     --colorGray: #A0A0A0;
     --colorLightGray: #ABABAB;
-
     --colorBackground: #424242;
-
     --colorYoutube: #C4302B;
     --colorInstagram: #BC2A8D;
     --colorTwitter: #1DA1F2;
@@ -21,6 +16,7 @@
     --colorItchio: #FA5C5C;
     --colorGithub: #F1502F;
     --colorGooglePlay: #FCB02D;
+    --colorWorldAnvil: #B4141E;
 }
 
 * {
@@ -28,16 +24,100 @@
     color: white;
 }
 
-#work-links .button-technology:hover {
-    background-color: var(--colorTech);
+body {
+    background-image: url(/assets/Imgs/Background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
 }
 
-#work-links .button-music:hover {
-    background-color: var(--colorMusic);
+button, a{
+    cursor: pointer;
 }
 
-#work-links .button-art:hover {
-    background-color: var(--colorArt);
+::selection, ::-moz-selection {
+    background: var(--colorSelection);
+    color: white;
+    font-style: italic;
+}
+
+#title h1 {
+    background-size: cover;
+    text-align: center;
+    font-size: 45px;
+    text-shadow: var(--colorTech) 1px 1px 10px;
+    margin-bottom: 0;
+}
+
+#presentation, #academic, #skills-lang {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.presentation-child {
+    margin: auto;
+    padding: 2%;
+}
+
+#presentation img, #academic img {
+    background-color: var(--colorBackground);
+    border-radius: 100%;
+    border: #fff solid 3px;
+    margin-top: 5px;
+}
+
+#about-me a {
+    text-decoration: underline;
+    cursor: pointer;
+    color: var(--colorImportant);
+}
+
+#work-links {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2, 2fr);
+    grid-auto-rows: minmax(10%, auto);
+}
+
+#work-links a {
+    margin: auto 1%;
+    width: 100%;
+}
+
+#work-links button {
+    color: #000;
+    border-radius: 10px;
+    padding: 25px;
+    font-size: 110%;
+    box-shadow: 0 1px 5px #fff;
+    transition: border-radius .5s;
+    border: 2px solid #000;
+    width: 100%;
+}
+
+#work-links button:hover {
+    border-radius: 5px;
+    transform: translateY(-3px);
+    box-shadow: 0 3px 6px #fff;
+    font-weight: 700;
+    transition: border-radius .25s, transform .2s, box-shadow .1s, font-weight .2s;
+}
+
+#work-links button:active {
+    border-radius: 5px;
+    transform: translateY(1px);
+    box-shadow: 0 0 #fff;
+    font-weight: lighter;
+    transition: border-radius 0s, transform .05s, box-shadow 0s, font-weight .05s;
 }
 
 #copyright {
@@ -54,7 +134,6 @@
 
 #general-information, #academic-general, #skills-lang, #jobs-general {
     text-align: center;
-    margin: 0 auto 5%; /* Center these sections */
 }
 
 #general-information h2, #academic-general h2, #skills-lang h2, #jobs-general h2 {
@@ -76,7 +155,6 @@
 
 #general-information td {
     padding: 0 25px;
-    margin: 0 auto; /* Center inner elements */
 }
 
 #general-information i {
@@ -92,7 +170,18 @@
     list-style-type: square;
     justify-content: center;
     align-content: center;
-    margin: 0 auto; /* Center inner elements */
+}
+
+#back-button button{
+    color: #000;
+    border-radius: 10px;
+    padding: 10px;
+    max-font-size: 3;
+    font-size: 100%;
+    box-shadow: 0 1px 5px #fff;
+    transition: border-radius .5s;
+    border: 2px solid #000;
+    width: 100%;
 }
 
 #skills li, #lang li {
@@ -110,12 +199,6 @@
 
 .job-child .completed {
     color: var(--colorImportant);
-}
-
-::selection, ::-moz-selection {
-    background: #77216F;
-    color: white;
-    font-style: italic;
 }
 
 .social-links {
@@ -159,26 +242,19 @@
 }
 
 .social-links i {
-    color: var(--colorGray);
+    color: white;
 }
 
 .social-links a:hover {
     font-size: 30px;
-    transition: font-size 0.3s, transform 0.3s;
 }
 
 .social-links a:hover i {
     transform: translateY(-5px);
-    transition: transform 0.3s;
 }
 
 .social-links a i {
     transform: translateY(0);
-    transition: transform 0.3s;
-}
-
-.youtube-link {
-    color: #c4302b;
 }
 
 .social-links a:hover .fa-youtube { color: var(--colorYoutube); }
@@ -188,33 +264,7 @@
 .social-links a:hover .fa-itch-io { color: var(--colorItchio); }
 .social-links a:hover .fa-github { color: var(--colorGithub); }
 .social-links a:hover .fa-google-play { color: var(--colorGooglePlay); }
-
-body {
-    background-image: url(/assets/Imgs/Background.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    overflow: scroll;
-    overflow-x: hidden;
-    padding: 0;
-    margin: 0;
-}
-
-.separator {
-    height: 3px;
-    width: 50%;
-    border-radius: 20px;
-}
-
-#title h1 {
-    background-size: cover;
-    text-align: center;
-    font-size: 45px;
-    text-shadow: var(--colorTech) 1px 1px 10px;
-    margin-bottom: 0;
-}
+.social-links a:hover .fa-globe { color: var(--colorWorldAnvil); }
 
 footer {
     color: #fff;
@@ -262,50 +312,6 @@ footer #contact-mail {
     padding-bottom: 20px;
 }
 
-#presentation, #academic, #skills-lang {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-}
-
-.presentation-child {
-    margin: auto;
-    padding: 2%;
-}
-
-.presentation-child a {
-    text-decoration: underline;
-}
-
-#presentation img, #academic img {
-    background-color: var(--colorBackground);
-    border-radius: 100%;
-    border: #fff solid 3px;
-    box-shadow: 3px 3px 5px #fff;
-    margin-top: 5px;
-}
-
-#about-me {
-    margin: 2% auto;
-    width: 95%;
-    height: 95%;
-}
-
-#about-me a {
-    text-decoration: underline;
-    cursor: pointer;
-    color: var(--colorImportant);
-}
-
-.wot {
-    color: var(--colorTech);
-    font-style: oblique;
-    width: 100%;
-    height: 100%;
-}
-
 .art {
     color: var(--colorArt);
     font-style: oblique;
@@ -313,8 +319,15 @@ footer #contact-mail {
     height: 100%;
 }
 
-.music {
-    color: var(--colorMusic);
+.writing {
+    color: var(--colorWriting);
+    font-style: oblique;
+    width: 100%;
+    height: 100%;
+}
+
+.wot {
+    color: var(--colorTech);
     font-style: oblique;
     width: 100%;
     height: 100%;
@@ -331,47 +344,27 @@ article h3 {
     height: 100%;
 }
 
-#work-links {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+#work-links .button-technology:hover {
+    background-color: var(--colorTech);
 }
 
-#work-links a {
-    margin: auto 1%;
-    width: 100%;
+#work-links .button-writing:hover {
+    background-color: var(--colorWriting);
 }
 
-#work-links button {
-    color: #000;
-    border-radius: 10px;
-    padding: 10px;
-    max-font-size: 3;
-    font-size: 100%;
-    box-shadow: 0 1px 5px #fff;
-    transition: border-radius .5s;
-    border: 2px solid #000;
-    width: 100%;
+#work-links .button-art:hover {
+    background-color: var(--colorArt);
 }
 
-#work-links button:hover {
-    border-radius: 5px;
-    transform: translateY(-3px);
-    box-shadow: 0 3px 6px #fff;
-    font-weight: 700;
-    transition: border-radius .25s, transform .2s, box-shadow .1s, font-weight .2s;
-    width: 100%;
-    height: 100%;
+.separator {
+    height: 3px;
+    width: 50%;
+    border-radius: 20px;
 }
 
-#work-links button:active {
-    border-radius: 5px;
-    transform: translateY(1px);
-    box-shadow: 0 0 #fff;
-    font-weight: lighter;
-    transition: border-radius 0s, transform .05s, box-shadow 0s, font-weight .05s;
-    width: 100%;
-    height: 100%;
+#content-wrapper {
+    width: 90%;
+    margin: auto;
 }
 
 /* Media query for small screens (e.g., phones) */
@@ -444,7 +437,6 @@ article h3 {
         height: 90%;
         width: 90%;
         border: #fff solid 3px;
-        box-shadow: 3px 3px 5px #fff;
         margin: auto;
         display: block;
         float: none;
@@ -482,4 +474,5 @@ article h3 {
     .social-links .fa-itch-io { color: var(--colorItchio); }
     .social-links .fa-github { color: var(--colorGithub); }
     .social-links .fa-google-play { color: var(--colorGooglePlay); }
+    .social-links .fa-globe { color: var(--colorWorldAnvil); }
 }
