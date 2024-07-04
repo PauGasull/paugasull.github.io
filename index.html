@@ -23,7 +23,7 @@
     <script src="assets/Scripts/main.js"></script>
     <script src="https://kit.fontawesome.com/cc15763512.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body id="content-wrapper">
     <!-- Content -->
     <div id="title">
         <h1>Welcome!</h1>
@@ -34,30 +34,38 @@
             <img src="/assets/Imgs/Profile.png" alt="Profile picture" width="300" height="300">
         </div>
         <div class="presentation-child">
-            <h3>My name's Pau Gasull Vicens</h3>
+            <h2>My name's Pau Gasull Vicens</h2>
             <p>I'm a Computer Engineering student. A nerd in my free time.</p>
-            <p>I'm captivated by <strong class="art">art</strong>, <strong class="music">music</strong>, and doing projects related to the <strong class="wot">world of technology</strong>!</p>
+            <p>I'm captivated by <strong class="art">art</strong>, <strong class="writing">storytelling</strong>, and doing projects related to the <strong class="wot">world of technology</strong>!</p>
             <p>I have a <a class="youtube-link" href="https://www.youtube.com/channel/UCZX5iYjYGn6yQ0300pUquzQ">YouTube</a> channel where I upload my songs and, in a future, Dev-logs and trailers for my Games and Software, as well as tutorials and recreations of video-games mechanics as well as Python, C++, HTML and Css.</p>
             <p>I also love drawing and art in general. I do both Digital and Traditional art<!-- and I upload it into my <a href="https://ko-fi.com/paugasull">Ko-Fi</a>-->.</p><br>
-            <p>Stay tuned to see the progress!</p>
+            <!--<p>Stay tuned to see the progress!</p>-->
+            <br>
+            <p id="about-me">Learn more <a href="/about-me">about me</a> and my skills!</p>
         </div>
     </div>
-    <!--<br>-->
-    <div id="about-me">
-        <p>Learn more <a href="/about-me">about me</a> and my accomplishments!</p>
-    </div>
+
     <hr class="separator">
     <article>
         <h3>Take a look to some of my work:</h3>
         <div id="work-links">
             <a href="#" title="Take a look at my portfolio!">
-                <button type="button" class="button-art" onclick="alertWorkInProgress()" >Art</button>
+                <button type="button" class="button-art" onclick="alertWorkInProgress()">Drawings</button>
             </a>
             <a href="#" title="Hear some of my best songs!">
-                <button type="button" class="button-music" onclick="alertWorkInProgress()">Music</button>
+                <button type="button" class="button-art" onclick="alertWorkInProgress()">Music</button>
             </a>
-            <a href="#" title="Learn about my favourite hobby!">
-                <button type="button" class="button-technology" onclick="alertWorkInProgress()">Technology</button>
+            <a href="#" title="Read some my stories!">
+                <button type="button" class="button-technology" onclick="alertWorkInProgress()">Writing</button>
+            </a>
+            <a href="#" title="Learn about the worlds I imagine!">
+                <button type="button" class="button-technology" onclick="alertWorkInProgress()">Worldbuilding</button>
+            </a>
+            <a href="#" title="See some of the craziest things I build!">
+                <button type="button" class="button-writing" onclick="alertWorkInProgress()">Hardware Projects</button>
+            </a>
+            <a href="#" title="Check out the apps I created!">
+                <button type="button" class="button-writing" onclick="alertWorkInProgress()">Software Development</button>
             </a>
         </div>
     </article>
@@ -82,17 +90,15 @@
             <div>
                 <a href="https://rcbgames.itch.io/"><i class="fa-brands fa-itch-io fa-xl"></i></a>
             </div>
-            <!--
             <div>
-                <a href="https://ko-fi.com/paugasull"><i>Ko-fi</i></a>
+                <a href="https://www.worldanvil.com/author/Pau%20Gasull"><i class="fa-solid fa-globe fa-xl"></i></a>
             </div>
-            -->
             <div>
                 <a href="https://play.google.com/store/apps/dev?id=5727850017622981969"><i class="fa-brands fa-google-play fa-xl"></i></a>
             </div>
         </div>
         <p id="contact-mail"><small>Contact me via Email: <a href="mailto:contact@paugasull.com">contact@paugasull.com</a></small></p>
     </footer>
-    <p><small id="copyright"> © Pau Gasull. All Rights Reserved.</small></p>
+    <p><small id="copyright">&#169; Pau Gasull. All Rights Reserved.</small></p>
 </body>
 </html>
