@@ -1,5 +1,5 @@
 :root {
-Ad    --colorWriting: #FFE259;
+    --colorWriting: #FFE259;
     --colorArt: #FF8EC7;
     --colorTech: #5FAFFF;
     --colorStrong: #FFD700;
@@ -93,7 +93,7 @@ button, a{
     width: 100%;
 }
 
-#work-links button {
+button {
     color: #000;
     border-radius: 10px;
     padding: 25px;
@@ -104,7 +104,7 @@ button, a{
     width: 100%;
 }
 
-#work-links button:hover {
+button:hover {
     border-radius: 5px;
     transform: translateY(-3px);
     box-shadow: 0 3px 6px #fff;
@@ -112,7 +112,7 @@ button, a{
     transition: border-radius .25s, transform .2s, box-shadow .1s, font-weight .2s;
 }
 
-#work-links button:active {
+button:active {
     border-radius: 5px;
     transform: translateY(1px);
     box-shadow: 0 0 #fff;
@@ -172,6 +172,7 @@ button, a{
     align-content: center;
 }
 
+/*
 #back-button button{
     color: #000;
     border-radius: 10px;
@@ -183,7 +184,7 @@ button, a{
     border: 2px solid #000;
     width: 100%;
 }
-
+*/
 #skills li, #lang li {
     margin: 5px 0;
     text-align: left;
